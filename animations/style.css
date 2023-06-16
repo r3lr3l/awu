@@ -1,0 +1,42 @@
+body {
+    background-color: aqua;
+}
+
+/* utility-classes */
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate--infinite {
+    animation-iteration-count: infinite;
+}
+
+.animate--fast {
+    animation-duration: 0,6s;
+}
+
+.animate--slow {
+    animation-duration: 3s;
+}
+
+.animate--delay {
+    animation-delay: 1s;
+}
+
+
+/* animations */
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.doge1 {
+    animation-name: rotate;
+    animation-timing-function: linear;
+}
